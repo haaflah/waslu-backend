@@ -1,16 +1,16 @@
 {
   "name": "waslu-backend",
   "version": "0.1.0",
-  "description": "Waslu backend — multi-tenant commerce platform built on Medusa v2.",
+  "description": "Waslu backend \u2014 multi-tenant commerce platform built on Medusa v2.",
   "license": "MIT",
   "private": true,
   "engines": {
     "node": ">=22.22.0"
   },
   "scripts": {
-    "dev": "medusa develop",
-    "build": "medusa build",
-    "start": "medusa start",
+    "dev": "node init && medusa develop",
+    "build": "node init && medusa build",
+    "start": "node init && medusa start",
     "seed": "medusa exec ./src/scripts/seed.ts",
     "db:migrate": "medusa db:migrate",
     "db:generate": "medusa db:generate",
