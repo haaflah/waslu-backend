@@ -1,39 +1,37 @@
 # CODEOWNERS — requested for review automatically on every pull request.
 #
-# NOTE FOR MAINTAINERS: `@Haaflah` is the placeholder owner taken from the LICENSE
-# copyright line. Replace it with the real maintainers / GitHub team before
-# enabling "Require review from Code Owners" in branch protection, otherwise
-# review requests will fail. See CONTRIBUTING.md §10.
+# NOTE FOR MAINTAINERS:
+# Both repository maintainers are listed as code owners.
 #
 # Syntax: https://docs.github.com/articles/about-code-owners
 # Last matching pattern wins, so keep specific paths below general ones.
 
-# Default owner for everything.
-*                                       @Haaflah
+# Default owners for everything.
+*                           @ismailoni @Abdulhameedi
 
 # Architecture decisions need an explicit sign-off from a lead.
-/docs/adr/                              @Haaflah
+/docs/adr/                  @ismailoni @Abdulhameedi
 
 # Commerce engine configuration and module wiring.
-/medusa-config.ts                       @Haaflah
-/src/modules/                           @Haaflah
-/src/links/                             @Haaflah
+/medusa-config.ts           @ismailoni @Abdulhameedi
+/src/modules/               @ismailoni @Abdulhameedi
+/src/links/                 @ismailoni @Abdulhameedi
 
-# Database migrations — schema ownership is per issue (CONTRIBUTING.md §11).
-/src/modules/*/migrations/              @Haaflah
+# Database migrations.
+/src/modules/*/migrations/  @ismailoni @Abdulhameedi
 
 # CI, dependency and tooling changes.
-/.github/                               @Haaflah
-/package.json                           @Haaflah
-/package-lock.json                      @Haaflah
-/tsconfig.json                          @Haaflah
-/eslint.config.mjs                      @Haaflah
+/.github/                   @ismailoni @Abdulhameedi
+/package.json               @ismailoni @Abdulhameedi
+/package-lock.json          @ismailoni @Abdulhameedi
+/tsconfig.json              @ismailoni @Abdulhameedi
+/eslint.config.mjs          @ismailoni @Abdulhameedi
 
 # Local environment and container setup.
-/docker-compose.yml                     @Haaflah
-/Dockerfile                             @Haaflah
-/.env.example                           @Haaflah
-/src/lib/env.ts                         @Haaflah
+/docker-compose.yml         @ismailoni @Abdulhameedi
+/Dockerfile                 @ismailoni @Abdulhameedi
+/.env.example               @ismailoni @Abdulhameedi
+/src/lib/env.ts             @ismailoni @Abdulhameedi
 
-# API contract — once it exists, changes must be reviewed deliberately.
-/contracts/                             @Haaflah
+# API contract.
+/contracts/                 @ismailoni @Abdulhameedi
